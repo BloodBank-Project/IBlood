@@ -5,29 +5,17 @@ import java.util.List;
 import com.project.bloodBank.bean.DonorDetailsBean;
 import com.project.bloodBank.entity.DonorDetailsEntity;
 
+
 public interface DonorDetailsService {
 
-	DonorDetailsEntity saveDonation(DonorDetailsEntity detailsEntity) ;
+	DonorDetailsEntity saveDonation(DonorDetailsEntity donorEntity);
 
-	DonorDetailsBean getByDonationId(Long donationId);
+	DonorDetailsBean getByDonationId(Long id);
 
-	void updateDonation(DonorDetailsEntity detailsEntity);
+	void updateDonation(DonorDetailsEntity DonorEntity);
 
-	void deleteDonation(Long donationId);
+	void deleteDonation(Long id);
 
-	List<DonorDetailsBean> getAllDonations();
-
-	void updateStatusAsAccepted(DonorDetailsEntity detailsEntity);
-
-	void updateStatusAsRejected(DonorDetailsEntity detailsEntity);
-
-	Long donationsCount();
-
-	Long totalAcceptedStatus();
-
-	Long totalRejectedStatus();
-
-	Long totalPendingStatus();
-
-	Long bloodBanksCount();
+	List<DonorDetailsBean> getAll();
+	
 }

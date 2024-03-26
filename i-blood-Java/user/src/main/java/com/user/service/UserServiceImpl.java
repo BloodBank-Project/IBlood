@@ -90,9 +90,9 @@ public class UserServiceImpl implements UserService {
 
 		User user = optional.get();
 
-		String bloodURL = "http://localhost:8081/" + user.getBloodGroupId();
+		String bloodURL = "http://13.48.82.196:8302/" + user.getBloodGroupId();
 
-		String bloodBankURL = "http://localhost:8082/" + user.getBloodBankId();
+		String bloodBankURL = "http://13.48.82.196:8301/" + user.getBloodBankId();
 
 		HttpHeaders headers = new HttpHeaders();
 

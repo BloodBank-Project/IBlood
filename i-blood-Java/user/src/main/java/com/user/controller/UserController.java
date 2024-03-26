@@ -32,7 +32,7 @@ import com.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("/user")
 @Slf4j
 @CrossOrigin("*")
 public class UserController {

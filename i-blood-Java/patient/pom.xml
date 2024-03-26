@@ -13,7 +13,6 @@
 	<artifactId>Patient_Section</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Patient_Section</name>
-	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -53,11 +52,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 		<dependency>
@@ -89,8 +83,6 @@
 
 
 	<build>
-		<finalName>${artifactId}</finalName>
-
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -105,7 +97,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-
 	</build>
 
 </project>

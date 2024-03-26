@@ -18,11 +18,11 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class DonorBean {
-
+	
 	private Long id;
 
 	private UserBean userId;
-
+	
 	private List<DonorDetailsBean> donarDetails;
 
 }

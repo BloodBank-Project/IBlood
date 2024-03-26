@@ -3,11 +3,11 @@ package com.project.bloodBank.bean;
 import java.sql.Date;
 
 public interface DonorInfoBean {
-
+	
 	Long getId();
-
+	
 	Long getUserId();
-
+	
 	String getFirstName();
 
 	String getLastName();
@@ -29,6 +29,8 @@ public interface DonorInfoBean {
 	String getType();
 
 	Long getBloodGroupId();
-
+	
 	Long getBloodBankId();
+	
+
 }

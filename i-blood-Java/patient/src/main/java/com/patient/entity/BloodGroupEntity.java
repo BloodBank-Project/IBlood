@@ -14,7 +14,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "blood_group")
+@Table(name = "bloodGroup")
 @Getter
 @Setter
 @ToString
@@ -24,10 +24,10 @@ public class BloodGroupEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "blood_id")
+	@Column(name = "bloodId")
 	private Integer bloodId;
 
-	@Column(name = "blood_type")
+	@Column(name = "bloodType")
 	private String bloodType;
 
 }

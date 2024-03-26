@@ -40,7 +40,7 @@ public class UserBean {
 	private String type;
 
 	private Long bloodGroupId;
-
+	
 	private Long bloodBankId;
 
 }

@@ -1,5 +1,6 @@
 package com.patient.bean;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

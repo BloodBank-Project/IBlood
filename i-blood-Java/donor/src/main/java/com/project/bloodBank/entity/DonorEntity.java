@@ -3,7 +3,6 @@ package com.project.bloodBank.entity;
 import java.io.Serializable;
 import java.util.List;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,18 +23,16 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Table(name = "donor")
-public class DonorEntity implements Serializable {
+public class DonorEntity implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
 	private Long id;
 
-	@Column(name = "user_id")
 	private Long userId;
 
 	@OneToMany(cascade = jakarta.persistence.CascadeType.ALL)
-	@JoinColumn(name = "donor_id", referencedColumnName = "id")
+	@JoinColumn(name = "donorId", referencedColumnName = "id")
 	private List<DonorDetailsEntity> donarDetails;
 
 }
