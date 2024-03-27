@@ -31,6 +31,6 @@ export class DataSource {
   }
 
   getTotalBloodBanks(): Observable<BloodBank[]> {
-    return this.http.get<BloodBank[]>('http://13.48.82.196:8301/details/total/bloodBanks')
+    return this.http.get<BloodBank[]>('http://13.48.82.196:8304/details/total/bloodBanks')
   }
 }

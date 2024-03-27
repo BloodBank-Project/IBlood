@@ -8,7 +8,7 @@ export class DataSource {
   constructor(private http: HttpClient) { }
 
   getAllBloodGroups(): Observable<BloodGroup[]> {
-    return this.http.get<BloodGroup[]>('http://13.48.82.196:8301/bloodbank/all');
+    return this.http.get<BloodGroup[]>('http://13.48.82.196:/bloodbank/all');
   }
 
 }
