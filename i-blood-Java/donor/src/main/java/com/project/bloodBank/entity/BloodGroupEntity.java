@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "bloodGroup")
+@Table(name = "blood_group")
 @Data
 public class BloodGroupEntity {
 

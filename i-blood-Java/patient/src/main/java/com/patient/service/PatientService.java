@@ -4,21 +4,22 @@ import java.util.List;
 import java.util.Optional;
 
 import com.patient.bean.PatientBean;
-import com.patient.entity.Patient;
+import com.patient.entity.PatientEntity;
 
 public interface PatientService {
-	Patient save(Patient patient);
+	PatientEntity savePatient(PatientEntity patient);
 
-	Patient get(Long id);
+	PatientEntity getByPatientId(Long id);
 
-	Optional<Patient> update(Patient patient);
+	Optional<PatientEntity> updatePatient(PatientEntity patient);
 
-	void delete(Long id);
+	void deletePatient(Long id);
 
-	List<Patient> getAll();
+	List<PatientEntity> getAllPatients();
 	
-	PatientBean getById(Long id);
+	PatientBean getByUserId(Long id);
 	
 	Long findPatientIdByUserId(Long userId);
 
-} 
+
+}

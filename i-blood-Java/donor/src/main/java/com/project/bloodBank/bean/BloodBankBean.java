@@ -1,6 +1,5 @@
 package com.project.bloodBank.bean;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

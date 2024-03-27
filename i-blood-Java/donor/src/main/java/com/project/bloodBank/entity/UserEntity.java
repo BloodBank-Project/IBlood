@@ -35,6 +35,7 @@ public class UserEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "user_id")
 	private Long userId;
 
 	@Column(name = "firstName")
@@ -49,7 +50,7 @@ public class UserEntity {
 	@Column(name = "password")
 	private String password;
 
-	@Column(name = "dateOfBirth")
+	@Column(name = "date_of_birth")
 	private Date dateOfBirth;
 
 	@Column(name = "gender")
@@ -69,8 +70,8 @@ public class UserEntity {
 
 	@Column(name = "blood_group_id")
 	private Long bloodGroupId;
-	
-	@Column(name="blood_bank_id")
+
+	@Column(name = "blood_bank_id")
 	private Long bloodBankId;
 
 }

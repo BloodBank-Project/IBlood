@@ -69,8 +69,8 @@ public class UserEntity {
 
 	@Column(name = "blood_group_id")
 	private Long bloodGroupId;
-	
-	@Column(name="blood_bank_id")
+
+	@Column(name = "blood_bank_id")
 	private Long bloodBankId;
 
 }

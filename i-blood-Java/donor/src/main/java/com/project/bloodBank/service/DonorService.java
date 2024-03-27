@@ -3,22 +3,27 @@ package com.project.bloodBank.service;
 import java.util.List;
 
 import com.project.bloodBank.bean.DonorBean;
+import com.project.bloodBank.donorExceptions.DonorDeleteException;
+import com.project.bloodBank.donorExceptions.DonorFetchException;
+import com.project.bloodBank.donorExceptions.DonorIdNotFoundException;
+import com.project.bloodBank.donorExceptions.DonorSaveException;
+import com.project.bloodBank.donorExceptions.DonorUpdateException;
 import com.project.bloodBank.entity.DonorEntity;
 
 public interface DonorService {
 
-	DonorEntity saveDonor(DonorEntity donorEntity);
+	DonorEntity saveDonor(DonorEntity donorEntity) throws DonorSaveException;
 
-	DonorEntity getByDonorId(Long id);
+	DonorEntity getByDonorId(Long donorId) throws DonorIdNotFoundException;
 
-	void updateDonor(DonorEntity DonorEntity);
+	void updateDonor(DonorEntity donorEntity) throws DonorUpdateException;
 
-	void deleteDonor(Long id);
+	void deleteDonor(Long donorId) throws DonorDeleteException;
 
-	List<DonorEntity> getAll();
-	
-	DonorBean getByUserId(Long id);
+	List<DonorEntity> getAllDonors() throws DonorFetchException;
 
-	Long findDonorIdByUserId(Long userId);
-	
+	DonorBean getByUserId(Long donorId) throws DonorIdNotFoundException;
+
+	Long findDonorIdByUserId(Long userId) throws DonorIdNotFoundException;
+
 }
